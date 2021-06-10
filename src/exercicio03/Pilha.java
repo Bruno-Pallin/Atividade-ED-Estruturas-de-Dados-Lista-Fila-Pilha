@@ -21,13 +21,13 @@ public class Pilha {
     }
 
 
-    public boolean vaziaA() {
-        return tamanhoA == 0;
+    public boolean vaziaB() {
+        return tamanhoB == 0;
     }
 
 
-    public boolean vaziaB() {
-        return tamanhoB == dados.length;
+    public boolean vaziaA() {
+        return tamanhoA == dados.length - 1;
     }
 
 
@@ -44,7 +44,7 @@ public class Pilha {
     public void empilhaB(int e) {
         //verifica se a lista está cheia
         if (cheiaA()) {
-        //mostra erro
+            //mostra erro
             System.out.println("Empilha B - Lista Cheia!");
         } else {
             //guarda no próximo índice disponível
@@ -128,7 +128,7 @@ public class Pilha {
         if (vaziaB()) {
             return 0;
         }
-        return dados[tamanhoA - 1];
+        return dados[tamanhoB - 1];
     }
 
 
@@ -155,4 +155,6 @@ public class Pilha {
         }
         return dados.length - tamanhoA - 1;
     }
+
+
 }
