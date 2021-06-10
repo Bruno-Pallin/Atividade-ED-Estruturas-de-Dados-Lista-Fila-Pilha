@@ -4,12 +4,10 @@
  */
 package exercicio03;
 
-import exercicio03.Pilha;
-
 public class PilhaRun {
-    
+
     public static void main(String[]args){
-        
+
         System.out.println("Teste 2");
         Pilha pilha = new Pilha(10);
         pilha.empilhaA(10);
@@ -17,7 +15,6 @@ public class PilhaRun {
         pilha.empilhaA(30);
         pilha.empilhaB(40);
         pilha.empilhaB(50);
-        pilha.desempilhaA();
         pilha.desempilhaA();
         pilha.desempilhaA();
         pilha.desempilhaA();
@@ -30,11 +27,8 @@ public class PilhaRun {
         System.out.println("Topo B: "+pilha.topoB());
         System.out.println("Tamanho A: "+pilha.tamanhoA());
         System.out.println("Tamanho B: "+pilha.tamanhoB());
-        
+
         System.out.println("Pilha A: "+pilha.mostrarPilhaA());
         System.out.println("Pilha B: "+pilha.mostrarPilhaB());
-        
-
     }
-    
 }
