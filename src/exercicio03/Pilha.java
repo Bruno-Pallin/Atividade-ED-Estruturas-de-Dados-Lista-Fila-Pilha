@@ -2,7 +2,7 @@
     Na estrutura de dados que você implementou, é possível que uma pilha esteja cheia e a outra não?
     Não é possivel, pois como usam o mesmo vetor, sempre que houver posições disponiveis, o sistema irá preencher com essas posições, seja pra cima ou pra baixo
  */
-package PilhaPkg;
+package exercicio03;
 
 public class Pilha {
 
