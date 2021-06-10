@@ -1,8 +1,7 @@
 /*
-Respondendo a pergunta:
-Não é possivel, pois como usam o mesmo vetor, sempre que houver posições disponiveis, o sistema irá preencher com essas posições, seja pra cima ou pra veixo
+    Na estrutura de dados que você implementou, é possível que uma pilha esteja cheia e a outra não?
+    Não é possivel, pois como usam o mesmo vetor, sempre que houver posições disponiveis, o sistema irá preencher com essas posições, seja pra cima ou pra baixo
  */
-
 package PilhaPkg;
 
 public class Pilha {
@@ -70,7 +69,7 @@ public class Pilha {
     public int desempilhaA() {
         int resp = -1;
         if (vaziaA()) {
-            System.out.println("ERRO!");
+            System.out.println("Pilha A - Vazia!");
         } else {
             resp = dados[tamanhoA - 1];
             System.out.println("Desempilhando item: " + resp + " Posição: " + (tamanhoA - 1));
@@ -84,7 +83,7 @@ public class Pilha {
     public int desempilhaB() {
         int resp = -1;
         if (vaziaB()) {
-            System.out.println("ERRO!");
+            System.out.println("Pilha A - Vazia!");
             return -1;
         } else {
             resp = dados[tamanhoB+1];
@@ -115,7 +114,7 @@ public class Pilha {
     public int topoA() {
         if (vaziaA()) {
             System.out.println("ERRO!");
-            return -1;
+            return 0;
         }
         return dados[tamanhoA - 1];
     }
@@ -123,7 +122,7 @@ public class Pilha {
     public int topoB() {
         if (vaziaB()) {
             System.out.println("ERRO!");
-            return -1;
+            return 0;
         }
         return dados[tamanhoB];
     }
@@ -131,7 +130,7 @@ public class Pilha {
     public int tamanhoA() {
         if (vaziaB()) {
             System.out.println("Pilha A - Vazia!");
-            return -1;
+            return 0;
         }
         return tamanhoA;
     }
@@ -139,9 +138,9 @@ public class Pilha {
     public int tamanhoB() {
         if (vaziaB()) {
             System.out.println("Pilha B - Vazia!");
-            return -1;
+            return 0;
         }
-        return dados.length-tamanhoB;
+        return dados.length-tamanhoB-1;
     }
 
 }
